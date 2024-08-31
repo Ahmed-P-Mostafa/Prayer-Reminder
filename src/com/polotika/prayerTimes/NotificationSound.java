@@ -34,6 +34,7 @@ public class NotificationSound implements LineListener {
     }
 
     void playSound() {
+        // play on another Thread
         try {
             clip.open(audioInputStream);
 
